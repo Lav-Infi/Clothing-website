@@ -1,0 +1,213 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  background-color: #dddbdb;
+  transition: transform 0.3s;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+}
+.buy-now {
+  display: inline-block;
+  background-color:#ff6f61; /* Orange background color */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding for the button */
+  text-align: center; /* Center align the text */
+  text-decoration: none; /* Remove underline */
+  border-radius: 7px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  font-size: 1em; /* Font size */
+  font-weight: bold; /* Bold text */
+}
+
+.buy-now:hover {
+  background-color: hsl(16, 100%, 50%); /* Darker orange color on hover */
+}
+.cart-items, .reviews-container {
+  margin: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.payment-section {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.payment-section label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.payment-section input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+.payment-section button {
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.payment-section button:hover {
+  background-color: #ff8a75;
+}
+
+.thankyou-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 300px;
+  margin: 10px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.review-item img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+@keyframes slide {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.reviews-container .review-item {
+  animation: slide 10s infinite;
+}
+/* Add this CSS to center the background image */
+.hero-center {
+  display: flex;
+  justify-content: center;
+}
+
+/* Add this CSS to center the text below the header */
+.slogan {
+  text-align: center;
+}
+
+/* Add this CSS to style the "Today's Sale" button */
+.today-sale-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.today-sale-btn:hover {
+  background-color: #ff8a75;
+}
+/* Add this to your styles.css file */
+
+/* Style for the form and its elements */
+.payment-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #ff6f61; /* Orange background color */
+  color: white; /* White text color */
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #FF4500; /* Darker orange color on hover */
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing - Lav's Clothing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Lav's Clothing</h1>
+    </header>
+    <main>
+        <section class="filters">
+            <label for="filter">Filter by price:</label>
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="50">Up to $50</option>
+                <option value="60">Up to $60</option>
+                <option value="70">Up to $70</option>
+                <option value="80">Up to $80</option>
+                <option value="90">Up to $90</option>
+                <option value="100">Up to $100</option>
+            </select>
+
+            <label for="sort">Sort by price:</label>
+            <select id="sort">
+                <option value="asc">Low to High</option>
+                <option value="desc">High to low</option>
+            </select>
+        </section>
+        <section class="product-grid">
+            <div class="product-item">
+                <img src="cloths/item1.jpeg" alt="Item 1">
+                <p>Item 1 - $50</p>
+                <a href="payment.html" class="buy-now">Buy Now</a>
+            </div>
+            <div class="product-item">
+                <img src="cloths/item2.jpeg" alt="Item 2">
+                <p>Item 2 - $75</p>
+                <a href="payment.html" class="buy-now">Buy Now</a>
+            </div>
+            <!-- Add other products similarly -->
+        </section>
+        <noscript>
+            <p>Please enable JavaScript to use the filter and sort functionality.</p>
+        </noscript>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
